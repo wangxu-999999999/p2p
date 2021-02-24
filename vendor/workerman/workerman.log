@@ -1,0 +1,23 @@
+2021-02-24 05:38:46 pid:1 Error: Class 'library\COM' not found in D:\www\ser\library\Client.php:106
+Stack trace:
+#0 D:\www\ser\library\Client.php(56): library\Client->connectNode('127.0.0.1:52818')
+#1 D:\www\ser\vendor\workerman\workerman\Connection\TcpConnection.php(637): library\Client->library\{closure}(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#2 D:\www\ser\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#3 D:\www\ser\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#4 D:\www\ser\vendor\workerman\workerman\Worker.php(1418): Workerman\Worker->run()
+#5 D:\www\ser\vendor\workerman\workerman\Worker.php(1361): Workerman\Worker::forkWorkersForWindows()
+#6 D:\www\ser\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#7 D:\www\ser\library\Client.php(78): Workerman\Worker::runAll()
+#8 D:\www\ser\Client.php(9): library\Client->start()
+#9 {main}
+2021-02-24 05:38:46 pid:1 Worker process terminated
+2021-02-24 06:27:07 pid:1 Exception: class \Protocols\Tcp not exist in D:\www\ser\vendor\workerman\workerman\Connection\AsyncUdpConnection.php:70
+Stack trace:
+#0 D:\www\ser\Client2.php(22): Workerman\Connection\AsyncUdpConnection->__construct('tcp://127.0.0.1...')
+#1 D:\www\ser\vendor\workerman\workerman\Worker.php(2415): {closure}(Object(Workerman\Worker))
+#2 D:\www\ser\vendor\workerman\workerman\Worker.php(1418): Workerman\Worker->run()
+#3 D:\www\ser\vendor\workerman\workerman\Worker.php(1361): Workerman\Worker::forkWorkersForWindows()
+#4 D:\www\ser\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#5 D:\www\ser\Client2.php(32): Workerman\Worker::runAll()
+#6 {main}
+2021-02-24 06:27:08 pid:1 Worker process terminated
